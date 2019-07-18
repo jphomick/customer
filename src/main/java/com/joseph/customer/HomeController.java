@@ -74,6 +74,7 @@ public class HomeController {
     @GetMapping("/search")
     public String searchForm(Model model) {
         model.addAttribute("customer", new Customer());
+        model.addAttribute("states", stateRepository.findAll());
         return "search";
     }
 
