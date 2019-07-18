@@ -6,7 +6,7 @@
 </head>
 <body>
 <form action="#"
-      th:action="@{/process}" th:object="${customer}" method="post">
+      th:action="@{/results}" th:object="${customer}" method="post">
     <input type="hidden" th:field="*{id}" />
     Title: <input type="text" th:field="*{title}" />
     <span th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></span><br />
